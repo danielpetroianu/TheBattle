@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBattle.Model", "TheBattle.Model\TheBattle.Model.csproj", "{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBattle.Test", "TheBattle.Test\TheBattle.Test.csproj", "{B31D53D0-E0DD-42FF-A661-00C746C424B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31D53D0-E0DD-42FF-A661-00C746C424B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31D53D0-E0DD-42FF-A661-00C746C424B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31D53D0-E0DD-42FF-A661-00C746C424B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31D53D0-E0DD-42FF-A661-00C746C424B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
