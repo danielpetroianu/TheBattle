@@ -8,7 +8,11 @@ namespace TheBattle.Model
 {
     class TheBattleContext : DbContext
     {
-        DbSet<ISoldier> Soldiers { get; set; }
+        public TheBattleContext() : base("Server=.;Database=TheBattle;Trusted_Connection=True;")
+        {
+        }
+
+        DbSet<Soldier> Soldiers { get; set; }
         DbSet<Army> Armies { get; set; }
     }
 }
