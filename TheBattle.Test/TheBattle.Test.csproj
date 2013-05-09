@@ -57,6 +57,10 @@
       <Project>{4BB3B8BD-289A-4CC8-BDCC-D3EFBF1A125A}</Project>
       <Name>TheBattle.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TheBattle.Model\TheBattle.Model.csproj">
+      <Project>{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}</Project>
+      <Name>TheBattle.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
