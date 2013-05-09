@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Web Developer Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBattle.Model", "TheBattle.Model\TheBattle.Model.csproj", "{DB0850E6-EAE3-4BCF-8E6D-C0580CC21F20}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBattle.Test", "TheBattle.Test\TheBattle.Test.csproj", "{B31D53D0-E0DD-42FF-A661-00C746C424B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBattle.Common", "Thebattle.Common\TheBattle.Common.csproj", "{4BB3B8BD-289A-4CC8-BDCC-D3EFBF1A125A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBattle.Interface", "TheBattle.Interface\TheBattle.Interface.csproj", "{DE0ED52D-18AD-4A56-A83A-366236B08775}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{4BB3B8BD-289A-4CC8-BDCC-D3EFBF1A125A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB3B8BD-289A-4CC8-BDCC-D3EFBF1A125A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB3B8BD-289A-4CC8-BDCC-D3EFBF1A125A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0ED52D-18AD-4A56-A83A-366236B08775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0ED52D-18AD-4A56-A83A-366236B08775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0ED52D-18AD-4A56-A83A-366236B08775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0ED52D-18AD-4A56-A83A-366236B08775}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
