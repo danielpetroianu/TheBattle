@@ -6,11 +6,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TheBattle.Model
 {
-    public class Soldier
+    public class Soldier : DbEntity<int>
     {
-        [Key]
-        public int Id { get; set; }
-
         public virtual Army Army { get; set; }
 
         public Soldier(int id)
