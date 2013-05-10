@@ -14,10 +14,10 @@
 			<div class="body">
 
  
-               <div class = "captain"></div>
-               <div class = "soldier"></div>
-               <div class = "soldier"></div>
-               <div class = "soldier"></div>
+               <div class = "captain">Mitchel</div>
+               <div class = "soldier">Bob</div>
+               <div class = "soldier">Sam</div>
+               <div class = "soldier">Smith</div>
         
 
 			</div>
@@ -33,10 +33,10 @@
 				
 				
                 
-               <div class = "captain"></div>
-               <div class = "soldier"></div>
-               <div class = "soldier"></div>
-               <div class = "soldier"></div>
+               <div class = "captain">Adrian</div>
+               <div class = "soldier">John</div>
+               <div class = "soldier">Michael</div>
+               <div class = "soldier">David</div>
              </div>
 
 		</div>
