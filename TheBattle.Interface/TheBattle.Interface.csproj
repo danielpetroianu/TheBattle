@@ -60,12 +60,14 @@
     <Content Include="img\bgcontainer.jpg" />
     <Content Include="img\bgcontent.gif" />
     <Content Include="img\bgfooter.gif" />
+    <Content Include="img\captain.png" />
     <Content Include="img\divider.gif" />
     <Content Include="img\gfx.jpg" />
     <Content Include="img\header.jpg" />
     <Content Include="img\map.jpg" />
     <Content Include="img\pattern.gif" />
     <Content Include="img\quote.gif" />
+    <Content Include="img\soldier.png" />
     <Content Include="img\stripes.gif" />
     <Content Include="Styles\default.css" />
     <Content Include="Styles\Site.css" />

@@ -66,7 +66,7 @@ img.left {margin: 0 18px 6px 0;}
 .divider {
 	background: url(../img/divider.gif) no-repeat;
 	height: 20px;
-	margin: 24px 0;
+	margin: 124px 0 0 0;
 }
 
 /* structure */
@@ -185,3 +185,25 @@ img.left {margin: 0 18px 6px 0;}
 	text-decoration: underline;
 }
 .footer .right, .footer .right a {color: #ACAF9B;}
+
+.soldier
+{
+	background: url(../img/soldier.png) no-repeat;
+    height:120px;
+    width:120px;
+    float:left;
+    position:relative;
+    }
+
+.captain
+{
+	background: url(../img/captain.png) no-repeat;
+    display:block;    
+    height:120px;
+    width:120px;
+    float:left;
+    position:relative;
+}
+
+.army
+{}
