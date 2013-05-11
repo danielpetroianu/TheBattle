@@ -51,7 +51,7 @@ namespace TheBattle.Test
 
             _armyRepo.EnlistSoldier(null);
 
-            Assert.AreEqual(null,_armyRepo.GetEnlistedSoldiers(armyId));
+            Assert.AreEqual(0,_armyRepo.GetEnlistedSoldiers(armyId).Count());
         }
 
         [TestMethod()]
@@ -85,7 +85,7 @@ namespace TheBattle.Test
         {
             int armyId = _armyRepo.Create(new Army());
 
-            Assert.IsNull(_armyRepo.GetEnlistedSoldiers(armyId));
+            Assert.AreEqual(0, _armyRepo.GetEnlistedSoldiers(armyId).Count());
 
             _armyRepo.EnlistSoldier(new Soldier() { Army = _armyRepo.Find(armyId) });
             _armyRepo.EnlistSoldier(new Soldier() { Army = _armyRepo.Find(armyId) });
