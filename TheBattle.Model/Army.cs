@@ -6,8 +6,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TheBattle.Model
 {
-    public class Army :DbEntity<int>
+    public class Army
     {
+        [Key]
+        public int Id { get; set; }
+
         private List<Soldier> soldiers;
 
         public Army(int id)

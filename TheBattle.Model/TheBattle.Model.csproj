@@ -46,8 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Army.cs" />
-    <Compile Include="ArmyRepository.cs" />
-    <Compile Include="DbEntity.cs" />
     <Compile Include="ISoldier.cs" />
     <Compile Include="Migrations\201305082309334_CreateDB.cs" />
     <Compile Include="Migrations\201305082309334_CreateDB.Designer.cs">
