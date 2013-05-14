@@ -14,7 +14,10 @@ namespace TheBattle.Model
         [StringLength(50)]
         public string Name
         {
-            get;
+            get
+            {
+                return Name;
+            }
             set
             {
                 if (string.IsNullOrEmpty(Name))
