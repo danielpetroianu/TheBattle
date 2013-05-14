@@ -32,7 +32,7 @@ namespace TheBattle.Model
                 return true;
             
 
-            if (this.FrontMan.Fight(defendingArmy.FrontMan))
+            if (this.FrontMan.Fight(defendingArmy.FrontMan) == Soldier.FightOutcome.Win)
             {
                 defendingArmy.ReportCasualty(defendingArmy.FrontMan);
             }

@@ -8,6 +8,13 @@ namespace TheBattle.Model
 {
     public class Soldier : DbBase.DbEntity<int>
     {
+        public enum FightOutcome
+        {
+            Win,
+            Loss,
+            InvalidResult
+        };
+
         public virtual Army Army { get; set; }
 
         [Required]
@@ -35,19 +42,19 @@ namespace TheBattle.Model
         }
 
 
-        public bool Fight(Soldier otherSoldier)
+        public FightOutcome Fight(Soldier otherSoldier)
         {
             if (otherSoldier == null && otherSoldier == this)
             {
-                throw new ArgumentException("Soldier exception");
+                return FightOutcome.InvalidResult;
             }
             
                 Random r = new Random();
                 int winner = r.Next(0, 2);
                 if (winner == 0)
-                    return false;
+                    return FightOutcome.Win;
                 else
-                    return true;
+                    return FightOutcome.Loss;
          
         }
     }

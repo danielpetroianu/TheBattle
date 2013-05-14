@@ -4,7 +4,7 @@ namespace TheBattle.Model
 {
     public class TheBattleContext : DbContext
     {
-        public TheBattleContext() : base("Server=ANCA-PC\\SQLEXPRESS;Database=TheBattle;Trusted_Connection=True;")
+        public TheBattleContext() : base("Server=.;Trusted_Connection=True;")
         {
         }
 

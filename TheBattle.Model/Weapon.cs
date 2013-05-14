@@ -9,7 +9,7 @@ namespace TheBattle.Model
     {
         public abstract int GetDamage();
 
-        public  isBetterThan(Weapon otherWeapon)
+        public bool isBetterThan(Weapon otherWeapon)
         {
             return this.GetDamage() >= otherWeapon.GetDamage();
         }

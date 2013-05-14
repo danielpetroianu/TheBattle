@@ -37,6 +37,32 @@ namespace TheBattle.Test
             Assert.IsTrue(attacker.StartWarWith(deffender));
         }
 
+        [TestMethod()]
+        public void SoldierFightTest_NullSoldiers()
+        {
+            Soldier soldier = null;
+            Soldier soldier2 = null;
+
+            Assert.IsTrue(soldier.Fight(soldier2) == Soldier.FightOutcome.InvalidResult);
+        }
+
+        [TestMethod()]
+        public void SoldierFightTest_NullSoldiers2()
+        {
+            Soldier soldier = new Soldier();
+            Soldier soldier2 = null;
+
+            Assert.IsTrue(soldier.Fight(soldier2) == Soldier.FightOutcome.InvalidResult);
+        }
+
+        [TestMethod()]
+        public void SoldierFightTest_NullSoldiers3()
+        {
+            Soldier soldier = null;
+            Soldier soldier2 = new Soldier();
+
+            Assert.IsTrue(soldier.Fight(soldier2) == Soldier.FightOutcome.InvalidResult);
+        }
 
         [TestMethod()]
         public void FrontManTest_ArmyWithNoSoldiers()
