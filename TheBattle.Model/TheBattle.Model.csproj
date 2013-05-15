@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Army.cs" />
+    <Compile Include="Entities\Weapon.cs" />
     <Compile Include="Migrations\201305142244189_SoldierReqArmy.cs" />
     <Compile Include="Migrations\201305142244189_SoldierReqArmy.Designer.cs">
       <DependentUpon>201305142244189_SoldierReqArmy.cs</DependentUpon>
