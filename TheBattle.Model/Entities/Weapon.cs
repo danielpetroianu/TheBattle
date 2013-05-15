@@ -6,7 +6,10 @@ namespace TheBattle.Model.Entities
 {
     public enum WeaponType
     {
-        BareFist
+        BareFist,
+        Axe,
+        Sword,
+        Spear
     }
 
     public class Weapon : DbBase.DbEntity<int>

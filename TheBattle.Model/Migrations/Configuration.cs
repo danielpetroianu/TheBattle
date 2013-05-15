@@ -16,7 +16,11 @@ namespace TheBattle.Model.Migrations
         protected override void Seed(TheBattle.Model.TheBattleContext context)
         {
             context.Weapons.AddOrUpdate(
-                new Weapon(WeaponType.BareFist.ToString(), WeaponType.BareFist, 1)
+                w => w.Name,
+                new Weapon(WeaponType.BareFist.ToString(),  WeaponType.BareFist,    1),
+                new Weapon(WeaponType.Axe.ToString(),       WeaponType.Axe,         3),
+                new Weapon(WeaponType.Sword.ToString(),     WeaponType.Sword,       2),
+                new Weapon(WeaponType.Spear.ToString(),     WeaponType.Spear,       2)
             );
 
             //  This method will be called after migrating to the latest version.
