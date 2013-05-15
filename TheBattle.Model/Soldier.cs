@@ -10,13 +10,18 @@ namespace TheBattle.Model
     {
         public virtual Army Army { get; set; }
 
-
         [Required]
         [StringLength(50)]
         public string Name
         {
             get;
-            set;
+            set
+            {
+                if (string.IsNullOrEmpty(Name))
+                {
+                    Name = value;
+                }
+            }
 
         }
 
@@ -29,7 +34,18 @@ namespace TheBattle.Model
 
         public bool Fight(Soldier otherSoldier)
         {
-            throw new NotImplementedException("To be implemented in other story");
+            if (otherSoldier == null && otherSoldier == this)
+            {
+                throw new ArgumentException("Soldier exception");
+            }
+            
+                Random r = new Random();
+                int winner = r.Next(0, 2);
+                if (winner == 0)
+                    return false;
+                else
+                    return true;
+         
         }
     }
 }

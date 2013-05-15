@@ -12,6 +12,8 @@ namespace TheBattle.Interface
         protected void Page_Load(object sender, EventArgs e)
         {
             Army army = new Army();
+            Soldier s = new Soldier();
+            
             army.Soldiers.Add(new Soldier());
             army.Soldiers.Add(new Soldier());
             army.Soldiers.Add(new Soldier());
