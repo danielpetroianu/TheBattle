@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using Rhino.Mocks;
+using TheBattle.Model.Entities;
 
 namespace TheBattle.Test
 {

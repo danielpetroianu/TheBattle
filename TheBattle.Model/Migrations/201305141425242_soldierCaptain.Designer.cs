@@ -5,13 +5,13 @@ namespace TheBattle.Model.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class soldierName : IMigrationMetadata
+    public sealed partial class soldierCaptain : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(soldierName));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(soldierCaptain));
         
         string IMigrationMetadata.Id
         {
-            get { return "201305151423280_soldierName"; }
+            get { return "201305141425242_soldierCaptain"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,10 +1,11 @@
 ﻿using System.Data.Entity;
+using TheBattle.Model.Entities;
 
 namespace TheBattle.Model
 {
     public class TheBattleContext : DbContext
     {
-        public TheBattleContext() : base("Server=ANCA-PC\\SQLEXPRESS;Database=TheBattle;Trusted_Connection=True;")
+        public TheBattleContext() : base("Server=.;Database=TheBattle;Trusted_Connection=True;")
         {
         }
 

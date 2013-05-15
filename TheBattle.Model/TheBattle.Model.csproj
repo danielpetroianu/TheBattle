@@ -45,9 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Army.cs" />
-    <Compile Include="ArmyRepository.cs" />
+    <Compile Include="Entities\Army.cs" />
+    <Compile Include="Migrations\201305142244189_SoldierReqArmy.cs" />
+    <Compile Include="Migrations\201305142244189_SoldierReqArmy.Designer.cs">
+      <DependentUpon>201305142244189_SoldierReqArmy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201305142259155_SoldierColumnRename_IsCapitan.cs" />
+    <Compile Include="Migrations\201305142259155_SoldierColumnRename_IsCapitan.Designer.cs">
+      <DependentUpon>201305142259155_SoldierColumnRename_IsCapitan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ArmyRepository.cs" />
     <Compile Include="DbBase\DbEntity.cs" />
+    <Compile Include="Repositories\IArmyRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Migrations\201305082309334_CreateDB.cs" />
     <Compile Include="Migrations\201305082309334_CreateDB.Designer.cs">
       <DependentUpon>201305082309334_CreateDB.cs</DependentUpon>
@@ -56,19 +66,22 @@
     <Compile Include="Migrations\201305082321334_SoldierIsInArmyHasSoldiers.Designer.cs">
       <DependentUpon>201305082321334_SoldierIsInArmyHasSoldiers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201305151423280_soldierName.cs" />
-    <Compile Include="Migrations\201305151423280_soldierName.Designer.cs">
-      <DependentUpon>201305151423280_soldierName.cs</DependentUpon>
+    <Compile Include="Migrations\201305141423280_soldierName.cs" />
+    <Compile Include="Migrations\201305141423280_soldierName.Designer.cs">
+      <DependentUpon>201305141423280_soldierName.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201305151425242_soldierCaptain.cs" />
-    <Compile Include="Migrations\201305151425242_soldierCaptain.Designer.cs">
-      <DependentUpon>201305151425242_soldierCaptain.cs</DependentUpon>
+    <Compile Include="Migrations\201305141425242_soldierCaptain.cs" />
+    <Compile Include="Migrations\201305141425242_soldierCaptain.Designer.cs">
+      <DependentUpon>201305141425242_soldierCaptain.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Soldier.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\ISoldierRepository.cs" />
+    <Compile Include="Entities\Soldier.cs" />
+    <Compile Include="Repositories\SoldierRepository.cs" />
     <Compile Include="TheBattleContext.cs" />
-    <Compile Include="Weapon.cs" />
+    <Compile Include="Entities\Weapons\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -81,11 +94,17 @@
     <EmbeddedResource Include="Migrations\201305082321334_SoldierIsInArmyHasSoldiers.resx">
       <DependentUpon>201305082321334_SoldierIsInArmyHasSoldiers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201305151423280_soldierName.resx">
-      <DependentUpon>201305151423280_soldierName.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201305142244189_SoldierReqArmy.resx">
+      <DependentUpon>201305142244189_SoldierReqArmy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201305151425242_soldierCaptain.resx">
-      <DependentUpon>201305151425242_soldierCaptain.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201305141423280_soldierName.resx">
+      <DependentUpon>201305141423280_soldierName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305141425242_soldierCaptain.resx">
+      <DependentUpon>201305141425242_soldierCaptain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305142259155_SoldierColumnRename_IsCapitan.resx">
+      <DependentUpon>201305142259155_SoldierColumnRename_IsCapitan.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
