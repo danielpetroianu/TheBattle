@@ -53,12 +53,9 @@ namespace TheBattle.Model.Entities
                 return FightOutcome.InvalidResult;
             }
 
-            Random r = new Random();
-            int winner = r.Next(0, 2);
-            if (winner == 0)
-                return FightOutcome.Win;
-            else
-                return FightOutcome.Loss;
+            return this.Weapon.IsBetterThan(otherSoldier.Weapon)
+                ? FightOutcome.Win
+                : FightOutcome.Loss;
 
         }
     }
