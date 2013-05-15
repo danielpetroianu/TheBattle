@@ -12,14 +12,21 @@ namespace TheBattle.Interface
 {
     public partial class _Default : System.Web.UI.Page
     {
+        private ArmyRepository _repository = new ArmyRepository();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            Army army = new Army();
+           /* Army army = new Army("Big Army");
             army.Soldiers.Add(new Soldier("Soldier1"));
             army.Soldiers.Add(new Soldier("Soldier2"));
-            army.Soldiers.Add(new Soldier("Soldier3"));
+            army.Soldiers.Add(new Soldier("Soldier3"));*/
+         //   _repository.Add(army).Save();
 
-            new ArmyRepository().Add(army).Save();
+            ddl.DataSource = _repository.GetAll().ToList();
+            ddl.DataTextField = "Name";
+            ddl.DataValueField = "Id";
+            ddl.DataBind();
+         
         }
     }
 }
