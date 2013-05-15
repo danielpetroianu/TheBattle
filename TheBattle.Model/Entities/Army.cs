@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,13 +13,17 @@ namespace TheBattle.Model.Entities
             Soldiers = new List<Soldier>();
         }
 
-        public virtual List<Soldier> Soldiers { get; set; }
+        public virtual List<Soldier> Soldiers 
+        { 
+            get; 
+            set; 
+        }
 
         public Soldier FrontMan
         {
             get 
             {
-                var theCapitan = Soldiers.Find(s => s.IsCaptain == true);
+               var theCapitan = Soldiers.Find(s => s.IsCaptain == true);
                 if(theCapitan == null)
                     theCapitan = Soldiers.FirstOrDefault();
                 
@@ -36,7 +40,7 @@ namespace TheBattle.Model.Entities
                 return true;
             
 
-            if (this.FrontMan.Fight(defendingArmy.FrontMan))
+            if (this.FrontMan.Fight(defendingArmy.FrontMan) == Soldier.FightOutcome.Win)
             {
                 defendingArmy.ReportCasualty(defendingArmy.FrontMan);
             }

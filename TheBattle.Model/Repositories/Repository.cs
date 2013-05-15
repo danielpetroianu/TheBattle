@@ -57,7 +57,7 @@ namespace TheBattle.Model.Repositories
             return this;
         }
 
-        public virtual IRepository<T> Edit(T entity)
+        public virtual IRepository<T> Update(T entity)
         {
             _entities.Entry(entity).State = System.Data.EntityState.Modified;
             return this;

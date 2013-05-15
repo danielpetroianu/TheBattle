@@ -60,7 +60,7 @@ namespace TheBattle.Test
             newArmy.Soldiers.Add(new Soldier("Brave Soldier #1"));
 
             //method beeng tested
-            _armyRepo.Edit(newArmy);
+            _armyRepo.Update(newArmy);
             _armyRepo.Save();
 
             Assert.AreEqual(1, newArmy.Soldiers.Count);

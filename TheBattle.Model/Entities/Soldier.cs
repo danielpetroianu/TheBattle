@@ -8,17 +8,22 @@ namespace TheBattle.Model.Entities
 {
     public class Soldier : DbBase.DbEntity<int>
     {
-        public Soldier() : this(string.Empty)
+        public enum FightOutcome
         {
+            Win,
+            Loss,
+            InvalidResult
+        };
 
-        }
-        public Soldier(string name)
-        {
-            Name = name;
-        }
+        public Soldier() : this(string.Empty) { }
+        public Soldier(string name) { Name = name; }
 
         [Required]
-        public virtual Army Army { get; set; }
+        public virtual Army Army 
+        { 
+            get; 
+            set; 
+        }
 
         [Required]
         [StringLength(50)]
@@ -34,18 +39,20 @@ namespace TheBattle.Model.Entities
             set;
         }
 
-
-        public bool Fight(Soldier otherSoldier)
+        public FightOutcome Fight(Soldier otherSoldier)
         {
-            if (otherSoldier == null && otherSoldier == this)
+            if (otherSoldier == null || otherSoldier == this)
             {
-                throw new ArgumentException("Invalid soldier");
+                return FightOutcome.InvalidResult;
             }
-            
+
             Random r = new Random();
             int winner = r.Next(0, 2);
+            if (winner == 0)
+                return FightOutcome.Win;
+            else
+                return FightOutcome.Loss;
 
-            return winner == 0;
         }
     }
 }

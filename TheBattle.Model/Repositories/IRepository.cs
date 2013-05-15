@@ -13,7 +13,7 @@ namespace TheBattle.Model.Repositories
         IRepository<T> Add(T item);
         IRepository<T> Add(params T[] items);
         IRepository<T> Add(IEnumerable<T> items);
-        IRepository<T> Edit(T item);
+        IRepository<T> Update(T item);
         IRepository<T> Delete(T item);
         void Save();
     }
