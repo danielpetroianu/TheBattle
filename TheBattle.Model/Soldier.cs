@@ -10,6 +10,23 @@ namespace TheBattle.Model
     {
         public virtual Army Army { get; set; }
 
+
+        [Required]
+        [StringLength(50)]
+        public string Name
+        {
+            get;
+            set;
+
+        }
+
+        public bool Captain
+        {
+            get;
+            set;
+        }
+
+
         public bool Fight(Soldier otherSoldier)
         {
             throw new NotImplementedException("To be implemented in other story");
