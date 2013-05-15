@@ -8,9 +8,14 @@ namespace TheBattle.Model.Entities
 {
     public class Army : DbBase.DbEntity<int>
     {
-        public Army()
+        public Army() : this(string.Empty)
+        {
+        }
+
+        public Army(string name)
         {
             Soldiers = new List<Soldier>();
+            Name = name;
         }
 
         public virtual List<Soldier> Soldiers 
@@ -19,6 +24,13 @@ namespace TheBattle.Model.Entities
             set; 
         }
 
+        [Required]
+        [StringLength(50)]
+        public string Name
+        {
+            get;
+            private set;
+        }
         public Soldier FrontMan
         {
             get 

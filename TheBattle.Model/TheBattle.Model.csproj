@@ -54,6 +54,10 @@
     <Compile Include="Migrations\201305142259155_SoldierColumnRename_IsCapitan.Designer.cs">
       <DependentUpon>201305142259155_SoldierColumnRename_IsCapitan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201305151734596_ArmyHasName.cs" />
+    <Compile Include="Migrations\201305151734596_ArmyHasName.Designer.cs">
+      <DependentUpon>201305151734596_ArmyHasName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\ArmyRepository.cs" />
     <Compile Include="DbBase\DbEntity.cs" />
     <Compile Include="Repositories\IArmyRepository.cs" />
@@ -105,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201305142259155_SoldierColumnRename_IsCapitan.resx">
       <DependentUpon>201305142259155_SoldierColumnRename_IsCapitan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305151734596_ArmyHasName.resx">
+      <DependentUpon>201305151734596_ArmyHasName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
