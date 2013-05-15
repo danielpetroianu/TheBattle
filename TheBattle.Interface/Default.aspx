@@ -5,8 +5,11 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
    
-            <div class="spacer"></div>
-
+            <div class="spacer">
+                <asp:DropDownList ID="ddl" runat="server">
+                </asp:DropDownList>
+            </div>
+            <!--
 		<div class="item">
 
 			<div class="title">Army 1</div>
@@ -42,7 +45,7 @@
 		</div>
 
 		<div class="divider"><span></span></div>
-
+        -->
 	
     
 		</div>
