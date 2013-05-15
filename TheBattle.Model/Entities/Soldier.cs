@@ -16,13 +16,20 @@ namespace TheBattle.Model.Entities
         };
 
         public Soldier() : this(string.Empty) { }
-        public Soldier(string name) { Name = name; }
+        public Soldier(string name) { Name = name; Weapon = new Weapon(); }
 
         [Required]
         public virtual Army Army 
         { 
             get; 
             set; 
+        }
+
+        [Required]
+        public virtual Weapon Weapon
+        {
+            get;
+            set;
         }
 
         [Required]

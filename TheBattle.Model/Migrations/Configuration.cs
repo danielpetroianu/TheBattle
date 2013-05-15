@@ -4,6 +4,7 @@ namespace TheBattle.Model.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using TheBattle.Model.Entities;
 
     internal sealed class Configuration : DbMigrationsConfiguration<TheBattle.Model.TheBattleContext>
     {
@@ -14,6 +15,10 @@ namespace TheBattle.Model.Migrations
 
         protected override void Seed(TheBattle.Model.TheBattleContext context)
         {
+            context.Weapons.AddOrUpdate(
+                new Weapon(WeaponType.BareFist.ToString(), WeaponType.BareFist, 1)
+            );
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

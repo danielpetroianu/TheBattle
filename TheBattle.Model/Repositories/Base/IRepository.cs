@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Collections.Generic;
 
-namespace TheBattle.Model.Repositories
+namespace TheBattle.Model.Repositories.Base
 {
     public interface IRepository<T> where T : class
     {

@@ -31,6 +31,7 @@ namespace TheBattle.Model.Entities
             get;
             private set;
         }
+
         public Soldier FrontMan
         {
             get 

@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace TheBattle.Model.Repositories
+namespace TheBattle.Model.Repositories.Base
 {
     public abstract class Repository<C, T> : IRepository<T>
         where T : class
