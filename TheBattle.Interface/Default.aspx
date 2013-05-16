@@ -6,47 +6,36 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
    
             <div class="spacer">
-                <asp:DropDownList ID="ddl" runat="server">
-                </asp:DropDownList>
-            </div>
-            <!--
+               </div>
+            
 		<div class="item">
 
-			<div class="title">Army 1</div>
+			<div class="title">Armies</div>
 			
 			<div class="body">
 
- 
-               <div class = "captain">Mitchel</div>
-               <div class = "soldier">Bob</div>
-               <div class = "soldier">Sam</div>
-               <div class = "soldier">Smith</div>
-        
+  <asp:DropDownList ID="ddl" runat="server">
+                </asp:DropDownList>       
 
 			</div>
 
 
-		<div class="divider"><span></span></div>
-
 		<div class="item">
 
-			<div class="title">Army 2</div>
+			<div class="title">Soldiers</div>
 
 			<div class="body">
 				
-				
-                
-               <div class = "captain">Adrian</div>
-               <div class = "soldier">John</div>
-               <div class = "soldier">Michael</div>
-               <div class = "soldier">David</div>
+			
+                <asp:CheckBoxList ID="soldiers" runat="server">
+                </asp:CheckBoxList>
+                <asp:Button ID="Button1" runat="server" Text="Save" />
              </div>
 
 		</div>
 
 		<div class="divider"><span></span></div>
-        -->
-	
+        
     
 		</div>
 		</div>

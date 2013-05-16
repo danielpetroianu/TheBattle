@@ -87,6 +87,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="armies.aspx" />
+    <Content Include="soldiers.aspx" />
+    <Content Include="soldiersfight.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -141,6 +144,27 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="armies.aspx.cs">
+      <DependentUpon>armies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="armies.aspx.designer.cs">
+      <DependentUpon>armies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="soldiers.aspx.cs">
+      <DependentUpon>soldiers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="soldiers.aspx.designer.cs">
+      <DependentUpon>soldiers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="soldiersfight.aspx.cs">
+      <DependentUpon>soldiersfight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="soldiersfight.aspx.designer.cs">
+      <DependentUpon>soldiersfight.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

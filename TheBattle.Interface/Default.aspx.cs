@@ -13,6 +13,7 @@ namespace TheBattle.Interface
     public partial class _Default : System.Web.UI.Page
     {
         private ArmyRepository _repository = new ArmyRepository();
+        private SoldierRepository _soldierrep = new SoldierRepository();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,7 +27,11 @@ namespace TheBattle.Interface
             ddl.DataTextField = "Name";
             ddl.DataValueField = "Id";
             ddl.DataBind();
-         
+
+            soldiers.DataSource = _soldierrep.GetAll().ToList();
+            soldiers.DataTextField = "Name";
+            soldiers.DataValueField = "Id";
+            soldiers.DataBind();
         }
     }
 }
