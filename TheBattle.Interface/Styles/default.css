@@ -146,11 +146,6 @@ img.left {margin: 0 18px 6px 0;}
 	font: normal 2em serif;
 }
 
-.item .title:first-letter {
-	display: block;
-	float: left;
-	font-size: 2.4em;
-}
 
 .item .metadata {
 	color: #666;
