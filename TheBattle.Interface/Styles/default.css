@@ -260,3 +260,23 @@ img.left {margin: 0 18px 6px 0;}
     font-weight:bold;
     font-size:16px;
 }
+
+.army
+{
+	background: url(../img/army.png) no-repeat;
+    display:block;    
+    height:120px;
+    width:120px;
+    float:left;
+    position:relative;
+    color:orange;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.army .edit
+{
+
+    font-size:12px;
+}

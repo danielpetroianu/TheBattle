@@ -60,6 +60,8 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="img\army.png" />
+    <Content Include="listarmies.aspx" />
     <Content Include="img\axe.PNG" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\bgcontainer.jpg" />
@@ -131,6 +133,13 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listarmies.aspx.cs">
+      <DependentUpon>listarmies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listarmies.aspx.designer.cs">
+      <DependentUpon>listarmies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
