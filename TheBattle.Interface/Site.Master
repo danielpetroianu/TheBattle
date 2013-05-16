@@ -16,10 +16,10 @@
             </div>
             <div class="top">
                 <div class="navigation">
-                    <a href="#" id="selected">soldiers</a>
-                    <a href="#">army</a>
-                    <a href="#">fights</a>
-                    <a href="<%=Page.ResolveUrl("~/About.aspx")%>">About</a>
+                    <a href="listsoldiers.aspx" >soldiers</a>
+                    <a href="listarmies.aspx">army</a>
+                    <a href="fights.aspx">fights</a>
+                    <a href="wars.aspx">wars</a>
                 </div>
                 <div class="pattern">
                     <span></span>
