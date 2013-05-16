@@ -30,6 +30,7 @@ namespace TheBattle.Interface
             Weapon w = _weapon.FindBy(weapon => weapon.Id == weapon_id).FirstOrDefault();
             soldier.Weapon = w;
             _repository.Add(soldier).Save();
+            Response.Redirect("listsoldiers.aspx");
         }
     }
 }

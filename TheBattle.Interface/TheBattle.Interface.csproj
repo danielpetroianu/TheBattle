@@ -90,6 +90,7 @@
     <Content Include="armies.aspx" />
     <Content Include="soldiers.aspx" />
     <Content Include="soldiersfight.aspx" />
+    <Content Include="listsoldiers.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -165,6 +166,13 @@
     </Compile>
     <Compile Include="soldiersfight.aspx.designer.cs">
       <DependentUpon>soldiersfight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listsoldiers.aspx.cs">
+      <DependentUpon>listsoldiers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listsoldiers.aspx.designer.cs">
+      <DependentUpon>listsoldiers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
