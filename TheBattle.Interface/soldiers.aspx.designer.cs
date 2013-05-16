@@ -13,31 +13,22 @@ namespace TheBattle.Interface {
     public partial class soldiers {
         
         /// <summary>
-        /// ddl control.
+        /// soldier_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddl;
+        protected global::System.Web.UI.WebControls.TextBox soldier_name;
         
         /// <summary>
-        /// TextBox1 control.
+        /// weapon_ddl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// weapons control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList weapons;
+        protected global::System.Web.UI.WebControls.DropDownList weapon_ddl;
         
         /// <summary>
         /// Button1 control.
