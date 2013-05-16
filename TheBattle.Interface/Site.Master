@@ -9,65 +9,44 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
-
-
-
-<div class="container">
-
-	<div class="gfx"><span></span></div>
-
-	<div class="top">
-
-    
-		<div class="navigation">
-			<a href="#" id="selected">soldiers</a>
-			<a href="#">army</a>
-			<a href="#">fights</a>
-		</div>
-
-		<div class="pattern"><span></span></div>
-
-		<div class="header">
-			<h1>The Battle</h1>
-			<p>Adventures of our brave soldiers</p>
-		</div>
-
-		<div class="pattern"><span></span></div>
-
-	</div>
-
-	<div class="content">
-
-
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            
-            
-            
-            
-            
-            </asp:ContentPlaceHolder>
-
-
-
-
-    </form>
-
-
-
-    <div class="footer">
-
-		<div class="left">
-			
-		</div>
-		
-		<div class="right"></div>
-		
-		<div class="clearer">&nbsp;</div>
-
-	</div>
-
-</div>
-
+    <div class="container">
+        <form runat="server">
+            <div class="gfx">
+                <span></span>
+            </div>
+            <div class="top">
+                <div class="navigation">
+                    <a href="#" id="selected">soldiers</a>
+                    <a href="#">army</a>
+                    <a href="#">fights</a>
+                    <a href="<%=Page.ResolveUrl("~/About.aspx")%>">About</a>
+                </div>
+                <div class="pattern">
+                    <span></span>
+                </div>
+                <div class="header">
+                    <h1>
+                        The Battle</h1>
+                    <p>
+                        Adventures of our brave soldiers</p>
+                </div>
+                <div class="pattern">
+                    <span></span>
+                </div>
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <div class="footer">
+            <div class="left">
+            </div>
+            <div class="right">
+            </div>
+            <div class="clearer">
+                &nbsp;</div>
+        </div>
+    </div>
 </body>
 </html>

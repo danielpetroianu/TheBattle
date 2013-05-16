@@ -8,6 +8,6 @@
         About
     </h2>
     <p>
-        Put content here.
+    InnserName here
     </p>
 </asp:Content>

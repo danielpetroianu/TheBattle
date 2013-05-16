@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Army.cs" />
+    <Compile Include="Entities\Weapon.cs" />
     <Compile Include="Migrations\201305142244189_SoldierReqArmy.cs" />
     <Compile Include="Migrations\201305142244189_SoldierReqArmy.Designer.cs">
       <DependentUpon>201305142244189_SoldierReqArmy.cs</DependentUpon>
@@ -58,10 +59,30 @@
     <Compile Include="Migrations\201305151734596_ArmyHasName.Designer.cs">
       <DependentUpon>201305151734596_ArmyHasName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201305152022137_CreateWeapon.cs" />
+    <Compile Include="Migrations\201305152022137_CreateWeapon.Designer.cs">
+      <DependentUpon>201305152022137_CreateWeapon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201305152046134_SoldierHasWeapon.cs" />
+    <Compile Include="Migrations\201305152046134_SoldierHasWeapon.Designer.cs">
+      <DependentUpon>201305152046134_SoldierHasWeapon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201305152131503_WeaponHasType.cs" />
+    <Compile Include="Migrations\201305152131503_WeaponHasType.Designer.cs">
+      <DependentUpon>201305152131503_WeaponHasType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201305152136128_WeaponModelRenameColumnType.cs" />
+    <Compile Include="Migrations\201305152136128_WeaponModelRenameColumnType.Designer.cs">
+      <DependentUpon>201305152136128_WeaponModelRenameColumnType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201305152146019_WeaponModelRenameColumnWeaponType.cs" />
+    <Compile Include="Migrations\201305152146019_WeaponModelRenameColumnWeaponType.Designer.cs">
+      <DependentUpon>201305152146019_WeaponModelRenameColumnWeaponType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\ArmyRepository.cs" />
     <Compile Include="DbBase\DbEntity.cs" />
     <Compile Include="Repositories\IArmyRepository.cs" />
-    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\Base\IRepository.cs" />
     <Compile Include="Migrations\201305082309334_CreateDB.cs" />
     <Compile Include="Migrations\201305082309334_CreateDB.Designer.cs">
       <DependentUpon>201305082309334_CreateDB.cs</DependentUpon>
@@ -80,12 +101,13 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\IWeaponRepository.cs" />
+    <Compile Include="Repositories\Base\Repository.cs" />
     <Compile Include="Repositories\ISoldierRepository.cs" />
     <Compile Include="Entities\Soldier.cs" />
     <Compile Include="Repositories\SoldierRepository.cs" />
+    <Compile Include="Repositories\WeaponRepository.cs" />
     <Compile Include="TheBattleContext.cs" />
-    <Compile Include="Entities\Weapons\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -112,6 +134,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201305151734596_ArmyHasName.resx">
       <DependentUpon>201305151734596_ArmyHasName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305152022137_CreateWeapon.resx">
+      <DependentUpon>201305152022137_CreateWeapon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305152046134_SoldierHasWeapon.resx">
+      <DependentUpon>201305152046134_SoldierHasWeapon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305152131503_WeaponHasType.resx">
+      <DependentUpon>201305152131503_WeaponHasType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305152136128_WeaponModelRenameColumnType.resx">
+      <DependentUpon>201305152136128_WeaponModelRenameColumnType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305152146019_WeaponModelRenameColumnWeaponType.resx">
+      <DependentUpon>201305152146019_WeaponModelRenameColumnWeaponType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

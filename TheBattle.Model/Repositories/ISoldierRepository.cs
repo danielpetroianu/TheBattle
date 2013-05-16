@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using TheBattle.Model.Entities;
+using TheBattle.Model.Repositories.Base;
 
 namespace TheBattle.Model.Repositories
 {
