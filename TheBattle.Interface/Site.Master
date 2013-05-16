@@ -39,7 +39,7 @@
                 </asp:ContentPlaceHolder>
             </div>
         </form>
-        <div class="footer">
+        <div>
             <div class="left">
             </div>
             <div class="right">
