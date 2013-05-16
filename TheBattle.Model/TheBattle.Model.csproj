@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201305152146019_WeaponModelRenameColumnWeaponType.Designer.cs">
       <DependentUpon>201305152146019_WeaponModelRenameColumnWeaponType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201305161654098_SoldierArmyIsOptional.cs" />
+    <Compile Include="Migrations\201305161654098_SoldierArmyIsOptional.Designer.cs">
+      <DependentUpon>201305161654098_SoldierArmyIsOptional.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\ArmyRepository.cs" />
     <Compile Include="DbBase\DbEntity.cs" />
     <Compile Include="Repositories\IArmyRepository.cs" />
@@ -149,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201305152146019_WeaponModelRenameColumnWeaponType.resx">
       <DependentUpon>201305152146019_WeaponModelRenameColumnWeaponType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201305161654098_SoldierArmyIsOptional.resx">
+      <DependentUpon>201305161654098_SoldierArmyIsOptional.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

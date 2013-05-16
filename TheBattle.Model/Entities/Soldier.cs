@@ -8,6 +8,8 @@ namespace TheBattle.Model.Entities
 {
     public class Soldier : DbBase.DbEntity<int>
     {
+        private Weapon _weapon;
+
         public enum FightOutcome
         {
             Win,
@@ -16,9 +18,9 @@ namespace TheBattle.Model.Entities
         };
 
         public Soldier() : this(string.Empty) { }
-        public Soldier(string name) { Name = name; Weapon = new Weapon(); }
+        public Soldier(string name) { Name = name; _weapon = new Weapon(); }
 
-        [Required]
+
         public virtual Army Army 
         { 
             get; 
@@ -28,8 +30,16 @@ namespace TheBattle.Model.Entities
         [Required]
         public virtual Weapon Weapon
         {
-            get;
-            set;
+            get
+            {
+                return _weapon;
+            }
+            set
+            {
+                if (value != null)
+                    _weapon = value;
+
+            }
         }
 
         [Required]

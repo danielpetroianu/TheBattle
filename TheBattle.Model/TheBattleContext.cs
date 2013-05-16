@@ -12,5 +12,12 @@ namespace TheBattle.Model
         public DbSet<Soldier> Soldiers { get; set; }
         public DbSet<Army> Armies { get; set; }
         public DbSet<Weapon> Weapons { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }
